@@ -1,0 +1,12 @@
+org: mkmanchi
+app: sls-nodejs
+service: sls-nodejs
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  function1:
+    handler: index.handler
